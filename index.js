@@ -38,6 +38,7 @@ app.get('/',(req, res)=>{
     res.send('API')
 })
 //ruta para api de /usuarios
+//comandos sql
 app.get('/usuarios',(req, res)=>{
     const query = `SELECT * FROM  usuarios`;
     conexion.query(query,(error,resultado)=>{
